@@ -17,14 +17,13 @@ you can use:
 
 | Left Delimiter      | Right Delimiter   |
 |---------------------|-------------------|
-| `$$          `      | `$$`              |
+| `$$`                | `$$`              |
 | `\\begin{equation}` | `\\end{equation}` |
 | `\\begin{align}`    | `\\end{align}`    |
 | `\\begin{alignat}`  | `\\end{alignat}`  |
 | `\\begin{gather}`   | `\\end{gather}`   |
 | `\\begin{CD}`       | `\\end{CD}`       |
 | `\\[`               | `\\]`             |
-|---------------------|-------------------|
 
 For "inline" mathematics (i.e. mathematics displayed in the surrounding
 text) you can use:
@@ -32,7 +31,8 @@ text) you can use:
 | Left Delimiter | Right Delimiter |
 |----------------|-----------------|
 | `\\(`          | `\\)`           |
-|----------------|-----------------|
+
+*NOTE: you must use the `\\` prefix!*
 
 For official details of which delimiters you can use consult the
 [auto-render API](https://katex.org/docs/autorender#api) documentation.
@@ -51,11 +51,13 @@ To install this Redmine plugin `cd` to your redmine instance directory
 commands:
 
 ```shell
-  cd $REDMINE_ROOT
   git clone --depth=1 https://github.com/stephengaito/redmine_plugin_katex.git plugins/katex
   cd plugins/katex
   ./getKaTeX
 ```
+
+Once you have done the above, you *will* need to reboot/restart your
+Redmine server.
 
 ## Implementation
 
