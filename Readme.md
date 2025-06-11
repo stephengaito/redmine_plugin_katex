@@ -5,6 +5,8 @@ This repository implements a very simple
 [plugin](https://www.redmine.org/projects/redmine/wiki/Plugins) which
 installs [KaTeX](https://katex.org/) into a Redmine instance.
 
+**Works with Redmine 6.0.x**
+
 ## Usage
 
 To *USE* KaTeX... in any text that you enter into Redmine, (for example a
